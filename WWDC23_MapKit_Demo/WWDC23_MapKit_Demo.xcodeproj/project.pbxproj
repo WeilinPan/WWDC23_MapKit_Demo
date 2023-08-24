@@ -11,6 +11,7 @@
 		EF4C3BD12A97318E00723376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C3BD02A97318E00723376 /* ContentView.swift */; };
 		EF4C3BD32A97319000723376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4C3BD22A97319000723376 /* Assets.xcassets */; };
 		EF4C3BD62A97319000723376 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4C3BD52A97319000723376 /* Preview Assets.xcassets */; };
+		EF4C3BDD2A97383700723376 /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C3BDC2A97383700723376 /* LocationDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EF4C3BD02A97318E00723376 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF4C3BD22A97319000723376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4C3BD52A97319000723376 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF4C3BDC2A97383700723376 /* LocationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				EF4C3BCE2A97318E00723376 /* WWDC23_MapKit_DemoApp.swift */,
 				EF4C3BD02A97318E00723376 /* ContentView.swift */,
+				EF4C3BDC2A97383700723376 /* LocationDetailsView.swift */,
 				EF4C3BD22A97319000723376 /* Assets.xcassets */,
 				EF4C3BD42A97319000723376 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4C3BD12A97318E00723376 /* ContentView.swift in Sources */,
+				EF4C3BDD2A97383700723376 /* LocationDetailsView.swift in Sources */,
 				EF4C3BCF2A97318E00723376 /* WWDC23_MapKit_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
