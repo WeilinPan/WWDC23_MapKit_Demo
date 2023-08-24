@@ -22,6 +22,8 @@ struct ContentView: View {
     @State private var route: MKRoute?
     @State private var routeDestination: MKMapItem?
     
+    @State private var visibleRegion: MKCoordinateRegion?
+    
     var body: some View {
         Map(position: $cameraPosition, selection: $mapSelection) {
 //            Marker("My Location", coordinate: .userLocation)
@@ -96,6 +98,9 @@ struct ContentView: View {
                 fetchRoute()
             }
         })
+        .onMapCameraChange { context in
+            visibleRegion = context.region
+        }
     }
 }
 
@@ -103,7 +108,7 @@ extension ContentView {
     func searchPlaces() async {
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchText
-        request.region = .userRegion
+        request.region = visibleRegion ?? .userRegion
         
         let results = try? await MKLocalSearch(request: request).start()
         self.results = results?.mapItems ?? []
